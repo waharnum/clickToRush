@@ -1,3 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
 .heading {
     font-family: sans-serif;
     background-color: black;
@@ -20,5 +29,5 @@
     display: table-cell;
     vertical-align: bottom;
     padding: 1em;
-    text-shadow: 1px 1px 2px black; 
+    text-shadow: 1px 1px 2px black;
 }
