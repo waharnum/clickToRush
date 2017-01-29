@@ -56,7 +56,7 @@ $(document).ready(function () {
             }  else {
                 displayText();
             }
-        }, 1);
+        }, 75);
     };
 
     var displayText = function () {
