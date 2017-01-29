@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var currentOffset = 0;
     var maxOffset = -1900;
+    var animationSpeed = 75;
 
     var rushQuotes = [
         "We're to be rewarded at your whim, then?",
@@ -56,7 +57,7 @@ $(document).ready(function () {
             }  else {
                 displayText();
             }
-        }, 75);
+        }, animationSpeed);
     };
 
     var displayText = function () {
