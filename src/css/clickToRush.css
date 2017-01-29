@@ -1,0 +1,14 @@
+.rushContainer {
+    background-image: url(/rushAnimated.png);
+    width: calc(100vw);
+    height: calc(70vh);
+    background-size: 2000vw 70vh;
+    background-position: 0 50%;
+    color: white;
+    font-size: 300%;
+    font-family: sans-serif;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 1em;
+}
