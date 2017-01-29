@@ -1,5 +1,5 @@
 .rushContainer {
-    background-image: url(rushAnimated.png);
+    background-image: url(../../rushAnimated.png);
     width: calc(100vw);
     height: calc(70vh);
     background-size: 2000vw 70vh;
