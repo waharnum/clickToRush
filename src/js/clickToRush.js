@@ -3,6 +3,7 @@ $(document).ready(function () {
     var currentOffset = 0;
     var maxOffset = -1900;
     var animationSpeed = 75;
+    var timeoutId;
 
     var rushQuotes = [
         "We're to be rewarded at your whim, then?",
@@ -44,13 +45,13 @@ $(document).ready(function () {
         var bgPos = rush.css("background-position", function() {
             currentOffset = currentOffset - 100;
             var position = currentOffset.toString() + "vw 50%";
-            console.log(position);
+            // console.log(position);
             return position;
         });
     };
 
     var animationTimer = function () {
-        setTimeout(function() {
+        timeoutId = setTimeout(function() {
             animateRush();
             if(currentOffset > maxOffset) {
                 animationTimer();
@@ -61,12 +62,13 @@ $(document).ready(function () {
     };
 
     var displayText = function () {
-        console.log("display text");
+        // console.log("display text");
         var rush = $(".rushContainer");
         rush.html(getQuote());
     };
 
     var restartAnimation = function () {
+        clearTimeout(timeoutId);
         currentOffset = 0;
         var rush = $(".rushContainer");
         rush.empty();
